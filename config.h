@@ -132,7 +132,7 @@ static const enum libinput_config_tap_button_map button_map =
 
 /* commands */
 static const char *termcmd[] = {"ghostty", NULL};
-static const char *menucmd[] = {"wofi", "--dmenu"};
+static const char *menucmd[] = {"pkill wofi || wofi", NULL};
 
 static const Key keys[] = {
     /* modifier                  key                  function argument */
