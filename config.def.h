@@ -134,11 +134,13 @@ static const enum libinput_config_tap_button_map button_map =
 static const char *termcmd[] = {"ghostty", NULL};
 static const char *menucmd[] = {"/bin/sh", "-c",
                                 "pkill -x wofi || wofi --show drun", NULL};
+static const char *browsercmd[] = {"zen", NULL};
 
 static const Key keys[] = {
     /* modifier                  key                  function argument */
     {MODKEY, XKB_KEY_space, spawn, {.v = menucmd}},
     {MODKEY, XKB_KEY_Return, spawn, {.v = termcmd}},
+    {MODKEY, XKB_KEY_b, spawn, {.v = browsercmd}},
     {MODKEY, XKB_KEY_j, focusstack, {.i = +1}},
     {MODKEY, XKB_KEY_k, focusstack, {.i = -1}},
     {MODKEY, XKB_KEY_i, incnmaster, {.i = +1}},
