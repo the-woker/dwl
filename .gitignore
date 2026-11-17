@@ -1,0 +1,9 @@
+dwl
+*.o
+*-protocol.c
+*-protocol.h
+.ccls-cache
+.direnv/
+.envrc
+.clangd
+.cache/

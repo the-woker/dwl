@@ -1,0 +1,35 @@
+[
+  {
+    "file": "dwl.c",
+    "arguments": [
+      "/nix/store/zibyv9n63g0a6biiv3dfganb7c5n2r1q-gcc-wrapper-16.2.0/bin/cc",
+      "dwl.c",
+      "-I/nix/store/wp5spgfd1rwzp917g97rw3vyfxwg8bw6-libinput-1.31.3-dev/include",
+      "-I/nix/store/3wsvmnw5q6615fmasaca8bdwdiaq0zgp-libxkbcommon-1.13.2-dev/include",
+      "-I/nix/store/grbq7fwfcr8x1gkfy9a8hg40kknk7q6h-wayland-1.26.0-dev/include",
+      "-I/nix/store/6wh8vilhabnvjagyqxk89x1s20yj0q5n-wlroots-0.20.2/include/wlroots-0.20",
+      "-I.",
+      "-DWLR_USE_UNSTABLE",
+      "-D_POSIX_C_SOURCE=200809L",
+      "-DVERSION=\"0.10-dev\"",
+      "-g",
+      "-Wpedantic",
+      "-Wall",
+      "-Wextra",
+      "-Wdeclaration-after-statement",
+      "-Wno-unused-parameter",
+      "-Wshadow",
+      "-Wunused-macros",
+      "-Werror=strict-prototypes",
+      "-Werror=implicit",
+      "-Werror=return-type",
+      "-Werror=incompatible-pointer-types",
+      "-Wfloat-conversion",
+      "-O1",
+      "-o",
+      "dwl"
+    ],
+    "directory": "/home/ratjerky/projects/dwl",
+    "output": "dwl"
+  }
+]
