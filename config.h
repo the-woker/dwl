@@ -136,7 +136,7 @@ static const char *menucmd[] = {"wofi", "--dmenu"};
 
 static const Key keys[] = {
     /* modifier                  key                  function argument */
-    {MODKEY, XKB_KEY_p, spawn, {.v = menucmd}},
+    {MODKEY, XKB_KEY_space, spawn, {.v = menucmd}},
     {MODKEY, XKB_KEY_Return, spawn, {.v = termcmd}},
     {MODKEY, XKB_KEY_j, focusstack, {.i = +1}},
     {MODKEY, XKB_KEY_k, focusstack, {.i = -1}},
@@ -150,8 +150,8 @@ static const Key keys[] = {
     {MODKEY, XKB_KEY_t, setlayout, {.v = &layouts[0]}},
     {MODKEY, XKB_KEY_f, setlayout, {.v = &layouts[1]}},
     {MODKEY, XKB_KEY_m, setlayout, {.v = &layouts[2]}},
-    {MODKEY, XKB_KEY_space, setlayout, {0}},
-    {MODKEY | WLR_MODIFIER_SHIFT, XKB_KEY_space, togglefloating, {0}},
+    {MODKEY, XKB_KEY_n, setlayout, {0}},
+    {MODKEY | WLR_MODIFIER_SHIFT, XKB_KEY_n, togglefloating, {0}},
     {MODKEY, XKB_KEY_e, togglefullscreen, {0}},
     {MODKEY, XKB_KEY_0, view, {.ui = ~0}},
     {MODKEY | WLR_MODIFIER_SHIFT, XKB_KEY_0, tag, {.ui = ~0}},

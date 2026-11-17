@@ -8,3 +8,5 @@ dwl
 .envrc
 .clangd
 .cache/
+result
+result-man
