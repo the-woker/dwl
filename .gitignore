@@ -4,6 +4,7 @@ dwl
 *-protocol.h
 .ccls-cache
 .direnv/
+.direnv/bin
 .envrc
 .clangd
 .cache/
