@@ -43,7 +43,7 @@
               printf "    - \"-isystem\"\n    - \"%s\"\n" "$dir" >> .clangd
             done
 
-        printf '\n---\nIf:\n  PathMatch: config(\.def)?\.h\nDiagnostics:\n  Suppress: "*"\n' >> .clangd
+        printf '\n---\nIf:\n  PathMatch: .*config(\\.def)?\\.h\nDiagnostics:\n  Suppress: "*"\n' >> .clangd
       '';
     };
   };
